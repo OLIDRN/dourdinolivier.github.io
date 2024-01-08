@@ -150,10 +150,10 @@
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="{{ asset('images/grpgu.jpg') }}" class="card-img-top" alt="Image du projet">
                     <div class="card-body">
+                        <img src="{{ asset('images/logo_02.svg') }}" class="card-img-top" alt="Image du projet">
                         <h5 class="card-title">Marathon Web</h5>
-                        <p class="card-text">Projet réalisé en 48h, en équipe de 8, lors du Marathon Web 2023 de l'IUT de Lens.</p>
+                        <p class="card-text">Site web, qui permet de repertorier les différentes histoires que l'utilsateur a pu créer. Création d'une histoire où l'utilisateur est le héros.</p>
                         <a href="#" class="btn btn-primary">Voir le projet</a>
                         <div class="card-footer">
                             <span class="badge rounded-pill" style="background-color: #173b6c">PHP</span>
@@ -164,8 +164,25 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{ asset('images/sapceinvader.png') }}" class="card-img-top" alt="Image du projet">
+                        <h5 class="card-title">Space Invaders</h5>
+                        <p class="card-text">Projet réalisé en plusieurs séances, qui consiste à créer un jeu Space Invaders en Java.</p>
+                        <a href="{{ route('spaceinvaders') }}" class="btn btn-primary">Voir le projet</a>
+                        <div class="card-footer">
+                            <span class="badge rounded-pill" style="background-color: #173b6c">JavaFX</span>
+                            <span class="badge rounded-pill" style="background-color: #173b6c">Jeu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+
 
 @endsection
