@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get("/spaceinvaders", function() {
     return view("spaceinvaders");
 })->name("spaceinvaders");
+
+Route::get("/marathon-web", function() {
+    return view("marathon");
+})->name("marathon");

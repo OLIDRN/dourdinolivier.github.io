@@ -3,7 +3,7 @@
 @section('content')
 <nav class="navbar">
     <div class="navbar-brand">
-        <img class="profile-pic" src="{{ asset('images/grpgu.jpg') }}" alt="profile picture">
+        <img class="profile-pic" src="{{ asset('images/DSC03460.jpg') }}" alt="profile picture">
         <h3 class="name">Olivier Dourdin</h3>
         <h5 class="job-title">Étudiant | 2ème année BUT Informatique</h5>
         <h5 class="job-title">Développeur Backend</h5>
@@ -18,7 +18,6 @@
             <li><a href="#about">Parcours</a></li>
             <li><a href="#skills">Mes outils</a></li>
             <li><a href="#experience">Mes projets</a></li>
-            <li><a href="#education">Me contacter</a></li>
         </ul>
     </div>
     <div class="credit">
@@ -156,10 +155,10 @@
                         <p class="card-text">Site web, qui permet de repertorier les différentes histoires que l'utilsateur a pu créer. Création d'une histoire où l'utilisateur est le héros.</p>
                         <a href="#" class="btn btn-primary">Voir le projet</a>
                         <div class="card-footer">
-                            <span class="badge rounded-pill" style="background-color: #173b6c">PHP</span>
-                            <span class="badge rounded-pill" style="background-color: #173b6c">Laravel</span>
-                            <span class="badge rounded-pill" style="background-color: #173b6c">Site Web</span>
-                            <span class="badge rounded-pill" style="background-color: #173b6c">Equipe</span>
+                            <span class="badge rounded-pill" style="background-color: #2e9d40">PHP</span>
+                            <span class="badge rounded-pill" style="background-color: #2e9d40">Laravel</span>
+                            <span class="badge rounded-pill" style="background-color: #2e9d40">Site Web</span>
+                            <span class="badge rounded-pill" style="background-color: #2e9d40">Equipe</span>
                         </div>
                     </div>
                 </div>
@@ -173,8 +172,8 @@
                         <p class="card-text">Projet réalisé en plusieurs séances, qui consiste à créer un jeu Space Invaders en Java.</p>
                         <a href="{{ route('spaceinvaders') }}" class="btn btn-primary">Voir le projet</a>
                         <div class="card-footer">
-                            <span class="badge rounded-pill" style="background-color: #173b6c">JavaFX</span>
-                            <span class="badge rounded-pill" style="background-color: #173b6c">Jeu</span>
+                            <span class="badge rounded-pill" style="background-color: #2e9d40">JavaFX</span>
+                            <span class="badge rounded-pill" style="background-color: #2e9d40">Jeu</span>
                         </div>
                     </div>
                 </div>

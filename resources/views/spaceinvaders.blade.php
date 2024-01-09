@@ -3,7 +3,7 @@
 @section('content')
     <nav class="navbar">
         <div class="navbar-brand">
-            <img class="profile-pic" src="{{ asset('images/grpgu.jpg') }}" alt="profile picture">
+            <img class="profile-pic" src="{{ asset('images/DSC03460.jpg') }}" alt="profile picture">
             <h3 class="name">Olivier Dourdin</h3>
             <h5 class="job-title">Étudiant | 2ème année BUT Informatique</h5>
             <h5 class="job-title">Développeur Backend</h5>
@@ -18,7 +18,6 @@
                 <li><a href="/#about">Parcours</a></li>
                 <li><a href="/#skills">Mes outils</a></li>
                 <li><a href="/#experience">Mes projets</a></li>
-                <li><a href="/#education">Me contacter</a></li>
             </ul>
         </div>
         <div class="credit">
@@ -29,6 +28,9 @@
     <div class="container">
         <header class="header text-center">
             <h1 class="title-principal">Space Invaders</h1>
+            <p>Lien vers le projet
+                <a href="https://github.com/OLIDRN/SpaceInVaders">ici</a>
+            </p>
             <div class="tags-container d-flex justify-content-center">
                 <p class="tags">JavaFX</p>
                 <p class="tags">Jeu</p>
@@ -111,22 +113,33 @@
                     <h2 class="project-title">Code</h2>
                     <pre class="project-description" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
                         <code class="language-java" data-lang="java">
-@Override
-public void setGameGrid(GameGrid gameGrid) {
-    labelle.setVisible(false);
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 20; j++) {
-            labels[i][j] = new Label();
-            Label label = labels[i][j];
-            label.setMinSize(50, 50);
-            label.setBackground(createBackground("back"));
-            this.gameGrid.add(label, j, i);
-            extracted(gameGrid, i, j);
+    @Override
+    public void setGameGrid(GameGrid gameGrid) {
+        labelle.setVisible(false);
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 20; j++) {
+                labels[i][j] = new Label();
+                Label label = labels[i][j];
+                label.setMinSize(50, 50);
+                label.setBackground(createBackground("back"));
+                this.gameGrid.add(label, j, i);
+                extracted(gameGrid, i, j);
+            }
         }
     }
-}
                         </code>
                     </pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-explanation">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="project-title">Explication du code</h2>
+                    <p class="project-description">
+                        La méthode <code>setGameGrid</code> est utilisée pour initialiser la grille de jeu. Elle commence par rendre le label invisible. Ensuite, elle parcourt chaque cellule de la grille de jeu (10 lignes et 20 colonnes) et pour chaque cellule, elle crée un nouveau label, définit sa taille minimale à 50x50, définit son arrière-plan et l'ajoute à la grille de jeu. Enfin, elle appelle la méthode <code>extracted</code> avec la grille de jeu et les indices de la cellule actuelle.
+                    </p>
                 </div>
             </div>
         </section>
