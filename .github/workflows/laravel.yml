@@ -33,9 +33,8 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
-    - name: lancer le serveur
-      run: php artisan serve
-    - name: install npm
+    - name: Install npm
       run: npm i
-    - name: run npm
+    - name: Run npm build
       run: npm run build
+    # - name: Do not run "php artisan serve" here, as it's not recommended in GitHub Actions
