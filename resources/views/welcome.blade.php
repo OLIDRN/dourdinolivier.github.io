@@ -153,7 +153,7 @@
                         <img src="{{ asset('images/logo_02.svg') }}" class="card-img-top" alt="Image du projet">
                         <h5 class="card-title">Marathon Web</h5>
                         <p class="card-text">Site web, qui permet de repertorier les différentes histoires que l'utilsateur a pu créer. Création d'une histoire où l'utilisateur est le héros.</p>
-                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                        <a href="{{ route('marathon') }}" class="btn btn-primary">Voir le projet</a>
                         <div class="card-footer">
                             <span class="badge rounded-pill" style="background-color: #2e9d40">PHP</span>
                             <span class="badge rounded-pill" style="background-color: #2e9d40">Laravel</span>
