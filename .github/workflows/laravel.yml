@@ -34,6 +34,3 @@ jobs:
       run: npm i
     - name: Run npm build
       run: npm run build
-    - name: serve
-      run: php artisan serve
-    # - name: Do not run "php artisan serve" here, as it's not recommended in GitHub Actions
