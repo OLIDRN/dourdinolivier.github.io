@@ -13,7 +13,11 @@
         <li><a href="https://www.linkedin.com/in/olivier-dourdin-3a58a6268/"><i class="bi bi-linkedin"></i></a></li>
         <li><a href="mailto:olivierdourdin148@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
     </ul>
-    <div class="navbar-menu">
+    <ul class="navbar-links">
+        <li><a href="{{ asset('images/cvoliang.pdf') }}"><i class="bi bi-file-earmark-pdf"></i>CV (English)</a></li>
+        <li><a href="{{ asset('images/CVOlivierfr.pdf') }}"><i class="bi bi-file-earmark-pdf"></i>CV (Français)</a></li>
+    </ul>
+    <div class="navbar-menu navbar-burger">
         <ul class="navbar-links">
             <li><a href="#about">Parcours</a></li>
             <li><a href="#skills">Mes outils</a></li>
