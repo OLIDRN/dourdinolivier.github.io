@@ -85,15 +85,6 @@ jobs:
 
       - name: Render SSH user secret name
         run: echo SSH_USERNAME_SECRET=IONOS_DEPLOYMENT_`echo ${{ matrix.deployment-id }} | tr '[:lower:]' '[:upper:]' | tr '-' '_'`_SSH_USERNAME >> $GITHUB_ENV
-
-      - name: Execute PHP commands if not disabled
-        run: |
-          if [[ "${{ inputs.disable-php }}" != "true" ]]; then
-            # Add your PHP deployment commands here
-            echo "Executing PHP commands..."
-          else
-            echo "PHP commands are disabled."
-          fi
       
       - name: Deploy to IONOS
         uses: ionos-deploy-now/deploy-to-ionos-action@v2
@@ -107,9 +98,6 @@ jobs:
           ssh-user: ${{ secrets[env.SSH_USERNAME_SECRET] }}
           ssh-key: ${{ secrets.IONOS_SSH_KEY }}
           disable-php: true
-
-
-
 
       - name: Update deployment status
         if: ${{ always() }}
