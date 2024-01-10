@@ -97,6 +97,8 @@ jobs:
           deployment-info: ${{ steps.deployment.outputs.info }}
           ssh-user: ${{ secrets[env.SSH_USERNAME_SECRET] }}
           ssh-key: ${{ secrets.IONOS_SSH_KEY }}
+          disable-php: true
+
 
       - name: Update deployment status
         if: ${{ always() }}
