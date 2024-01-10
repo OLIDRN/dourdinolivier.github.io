@@ -21,10 +21,7 @@ jobs:
     - name: Install Dependencies
       run: composer update --ignore-platform-req=ext-fileinfo
     - name: composer
-    - name: dep
-      run: rm -rf vendor
-    - name: dep2
-      run: rm composer.lock
+      run: composer update
     - name: composer install
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
